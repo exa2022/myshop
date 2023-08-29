@@ -1,0 +1,40 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block description%}"You can create an account on my shop store"{% endblock%}
+{% block robots%}index, follow{% endblock%}
+{% block title%}Signup{% endblock %}
+{% block keyboards %}Sign up my shop, MyShop{% endblock %}
+{% block css %}{% static "products/signup.css" %}{% endblock %}
+
+{% block body%}
+<!-- ************** header **********************8-->
+    {% include "includes/nav.html" %}
+
+    <form>
+
+        <label for= "fullName">Full name: </label>
+        <br>
+        <input class= "field" type ="text" id= "fullName" required>
+        <br>
+
+        <label for= "email">Email: </label>
+        <br>
+        <input class= "field" type ="email" id= "email" required>
+        <br>
+
+        <label for= "password">Password: </label>
+        <br>
+        <input class= "field" type ="password" id= "password" required>
+        
+        <br>
+        <input type = "checkbox" id="checkbox" required><label for= "checkbox"> I agree to the <a href ="">terms and conditions</a>.</label>
+        <br>
+        <br>
+
+        <button onclick="userOutput()" id= "signButton" type = "submit">Signup</button>
+
+    </form>
+
+
+{% endblock%}

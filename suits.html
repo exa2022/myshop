@@ -1,0 +1,49 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block description%}"This is my description"{% endblock%}
+{% block robots%}index, follow{% endblock%}
+{% block title%}All Suits{% endblock %}
+{% block css %}{% static "products/style.css" %}{% endblock %}
+{% block keyboards %}Modern black suit, MyShop{% endblock %}
+
+    {% block body %}
+        <!-- *************************************  header **************************************************8-->
+        {% include "includes/nav.html" %}
+
+
+        <main id="product-con">
+
+            <img class="suit" src="{% static "products/img/p1.png" %}">
+
+            
+            <img class="suit" src="{% static "products/img/p2.png" %}">
+
+
+            <img class="suit vertical" src="{% static "products/img/p3-vertical.png" %}">
+        
+
+            <img class="suit" src="{% static "products/img/p4.png" %}">
+                
+           
+            <img class="suit" src="{% static "products/img/p5.png" %}">
+                
+            
+            <img class="suit" src="{% static "products/img/p6.png" %}">
+              
+
+            <img class="suit" src="{% static "products/img/p7.png" %}">
+               
+    
+            <img class="suit" src="{% static "products/img/p8.png" %}">
+               
+
+        </main>
+
+
+
+        <script type= "text/javascript" src="index.js"></script>
+
+
+    {% endblock %}
+

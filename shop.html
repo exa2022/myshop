@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block description%}"This is my description"{% endblock%}
+{% block robots%}index, follow{% endblock%}
+{% block title%}Shop{% endblock %}
+{% block css %}{% static "products/style.css" %}{% endblock %}
+{% block keyboards %}Modern black suit, MyShop{% endblock %}
+
+{% block body%}
+    {% include "includes/nav.html" %}
+    <h1>This is the Shop Page<h1>
+
+{% endblock %}

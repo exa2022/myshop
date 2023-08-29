@@ -1,0 +1,107 @@
+{% extends "base.html" %}
+{% load static %}
+
+
+{% block description%}"This is my description"{% endblock%}
+{% block robots%}index, follow{% endblock%}
+{% block title%}Shoppify{% endblock %}
+{% block css %}{% static "products/style.css" %}{% endblock %}
+{% block keyboards %}Modern black suit, MyShop{% endblock %}
+
+
+
+
+
+{% block body%}
+
+    {% include "includes/nav.html" %}
+     <!-- *************************************  header **************************************************-->
+
+    <!-- ************************************** main content ********************************************* -->
+    <section id = "intro"> 
+        <div style="width: 60%;">
+            <h1>Best Clothing Quality</h1>
+            <br>
+            <p>Thaosdaac adhascadk asdascad asdascad asdascad  deafcac dainadfcfad ifaekncdcs iadfcdzns eiaodczncxsz afcadzkj afsadozc
+                asdasdscas thdg. <br>There is a great time being spend. There is everytugnfv. 
+            </p>
+            <a href = "{% url "signup" %}" id="member-button">Become a member</a>
+        </div>
+        
+        <video controls>
+            <source src = "{% static "products/videos/intro-video.mp4" %}">
+        </video>
+        
+    </section>
+    <br>
+    
+    <!-- ******************************************  category ************************************* -->
+    
+    <hr>
+
+    <div class="product-nav">
+        <h3>Suits</h3>
+        <a href="{% url "all_suits" %}">View all Suits</a>
+    </div>
+
+
+    <!-- ***********************************  Product Card *********************************************** -->
+    <main id="products-intro">
+        {% for product in products %}
+            <div class = "product-card">
+                <div class = "review-con">
+                    <p>Reviews 4.9 ⭐</p>
+                </div>
+
+                <!-- <h2>Suits</h2> -->
+                <img src = "{{ product.image.url }}" alt = "Suit Image" width = "200" id = "product-image1">
+                <br>
+
+                <div style ="padding:0px 19px">
+                    <h2>{{product.title}}</h2>
+                    <p>{{product.description}}</p>
+                    {% if product.brand %}
+                        <p><b>{{product.brand.address.city}}</b></p>
+                    {% endif %}
+                    <a href = {% url "product_page" product.brand.title product.slug %}>View Product</a>
+                </div>
+            </div>
+        {% endfor %}
+        
+    </main>
+
+
+    {% comment %} <div id="cal-container">
+
+        <h2 id="displayNum">0</h2>
+        <h4 onClick="formNumber(7)">7</h4>
+        <h4 onClick="formNumber(8)">8</h4>
+        <h4 onClick="formNumber(9)">9</h4>
+        <h4 onClick="formNumber(4)">4</h4>
+        <h4 onClick="formNumber(5)">5</h4>
+        <h4 onClick="formNumber(6)">6</h4>
+        <h4 onClick="formNumber(1)">1</h4>
+        <h4 onClick="formNumber(2)">2</h4>
+        <h4 onClick="formNumber(3)">3</h4>
+        <h4 onClick="formNumber(0)" style="grid-row: 5/6; grid-column:1/3">0</h4>
+        <h4 onClick="formNumber('.')">.</h4>
+        <h4 style="grid-row: 2/3; grid-column: 4/5" class="operator-button" onClick="opDivide()">/</h4>
+        <h4 style="grid-row: 3/4; grid-column: 4/5" class="operator-button" onClick="opMultiply()">x</h4>
+        <h4 style="grid-row: 4/5; grid-column: 4/5" class="operator-button" onClick="opSubtract()">-</h4>
+        <h4 style="grid-row: 5/6; grid-column: 4/5" class="operator-button" onClick="opSum()">+</h4>
+        <h4 id="equal" style="grid-row: 6/7; grid-column: 1/5" class="operator-button">=</h4>
+
+
+
+    </div> {% endcomment %}
+
+
+
+
+    <footer>
+        <h2>Footer details</h2>
+    </footer>
+
+
+    
+{% endblock%}

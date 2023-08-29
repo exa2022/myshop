@@ -1,0 +1,473 @@
+body{
+    font-family: sans-serif;
+    margin: 0;
+}
+
+.body-dark{
+    background-color: black;
+    color: white;
+}
+
+
+
+/* This is the css code for the main navigation bar */
+header
+{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 5%;
+    background-color: white;
+    box-shadow: 0px 10px 25px #afadad;
+    transition-duration: 0.3s;
+    height: 70px;
+      
+}
+
+#mainHeader img
+{
+    padding-top:10px;
+
+}
+
+header:hover
+{
+    background-color: aqua;
+}
+
+
+.main-nav{
+    /* background-color: #DADADC; */
+    /* border: solid;
+    border-width: 3px;
+    border-color: red; */
+    padding: 10px;
+    display: flex;
+    column-gap: 30px;
+    padding-top:15px;
+}
+
+/* This is the code for all the nav items */
+.main-nav a{
+    font-size: 20px;
+    color: #353E3D;
+    font-family: sans-serif;
+    text-decoration: none;
+    font-weight: bold;
+    transition-duration: 0.3s;
+    padding-top: 10px;
+}
+
+.main-nav a:hover{
+    color: purple;
+
+}
+
+header svg:hover{
+    cursor:pointer;
+}
+
+
+#moon-icon{
+    display: none;
+}
+
+
+
+
+
+
+
+
+#Button1
+{
+    color: purple;
+    
+}
+
+#Button2
+{
+    color: purple;
+    
+}
+
+#Button3
+{
+    color: purple;
+    
+}
+
+#Button4
+{
+    color: purple;
+    
+}
+
+#Button5
+{
+    color: purple;
+    
+}
+
+
+#intro
+{
+    display: flex;
+    width: 1100px;
+    margin: 100px auto;
+    justify-content: space-between;
+    
+}
+
+#intro h1{
+    font-size: 26px;
+}
+
+#intro p{
+    font-size: 18px;
+    margin-bottom: 40px;
+    color: gray;
+}
+
+#intro a
+{
+    background-color: #5762D5;
+    color: white;
+    border:none;
+    padding: 10px 25px;
+    font-size: 22px;
+    font-weight: bold;
+    border-radius: 10px;
+    text-decoration: none;
+    animation: slide-up 1s;
+    display: block;
+    width: fit-content;
+
+}
+
+@keyframes slide-up{
+    0%{transform: translateY(40px); opacity: 0%;}
+    70%{transform: translateY(-5px)}
+    100%{transform: translateY(0px); opacity: 100%;}
+}
+
+#intro a:hover{
+    transition-duration: 0.3s;
+    cursor: pointer;
+    background-color: #454fc1;
+    
+}
+
+#products-intro
+{
+    display: flex;
+    margin: auto;
+    width: 700px;
+    justify-content: center;
+    gap: 30px 30px;
+    
+}
+
+.product-card
+{
+    background-color: #e9e6f0;
+    border-radius: 20px;
+    width: 200px;
+    margin: auto;
+    color: black;
+    height: 450px;
+    
+}
+
+.product-card h2{
+    padding: 0px 0px;
+}
+
+.product-card p{
+    padding: 0px;
+}
+
+
+.review-con
+{
+    position: absolute;
+    margin: 150px 0 0 20px;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    z-index: 1;
+    transition-duration: 0.3s;
+    opacity: 0%;
+
+}
+
+.review-con2
+{
+    position: absolute;
+    margin: 150px 0 0 20px;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    z-index: 1;
+    transition-duration: 0.3s;
+    opacity: 0%;
+
+}
+
+.review-con3
+{
+    position: absolute;
+    margin: 150px 0 0 20px;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    z-index: 1;
+    transition-duration: 0.3s;
+    opacity: 0%;
+
+}
+
+.review-con4
+{
+    position: absolute;
+    margin: 150px 0 0 20px;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    z-index: 1;
+    transition-duration: 0.3s;
+    opacity: 0%;
+
+}
+
+#product-image1
+{
+    border-radius: 20px 20px 0px 0px;
+    transition-duration: 0.3s;
+
+}
+
+#product-image2
+{
+    border-radius: 20px 20px 0px 0px;
+    transition-duration: 0.3s;
+
+}
+
+#product-image3
+{
+    border-radius: 20px 20px 0px 0px;
+    transition-duration: 0.3s;
+
+}
+
+#product-image4
+{
+    border-radius: 20px 20px 0px 0px;
+    transition-duration: 0.3s;
+
+}
+
+
+
+.product-card a
+{
+    text-decoration: none;
+    transition-duration: 0.3s;
+    color: purple;
+    
+}
+
+.product-card a:hover
+{
+    color:red;
+}
+
+
+.product-nav{
+    display: flex; 
+    justify-content: space-between;
+    width: 900px;
+    margin: 15px auto;
+}
+
+
+.product-nav h3
+{
+    margin: 0;
+}
+
+.product-nav a
+{
+    text-decoration: none;
+    transition-duration: 0.2s;
+}
+
+.product-nav a:hover
+{
+    color:red;
+}
+
+footer
+{
+    background-color: #2B2343;
+    height: 300px;
+    width: 100%;
+    color: white;
+    text-align: center;
+}
+
+input
+{
+    margin: 0 0 10px 0;
+
+}
+
+#nav-cat
+{
+    background-color: orange;
+
+}
+
+
+video{
+    width: 40%;
+    border-radius: 5%;
+    border: none;
+}
+
+
+#mainHeader img:hover
+{
+    cursor: pointer;
+
+}
+
+
+
+
+/*     --------------------------          All Suits      -----------------------------           */
+
+#product-con
+{
+    width: 70%;
+    height: 1260px;
+    margin: 50px auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    
+
+
+}
+
+.suit
+{
+    background-color: #FB6376;
+    height: 100%;
+    filter: grayscale(100%);
+}
+
+.suit:hover
+{
+    box-shadow: 5px 5px 15px #000;
+    cursor: pointer;
+    filter: grayscale(0%);
+}
+
+.vertical{
+    grid-row:1/3;
+    grid-column:3/4;
+}
+
+
+
+/*                       This is the code for the final element                        */
+
+
+#final-element aside .title, #final-element h5, #final-element aside .text
+{
+    color: #fb6376;
+}
+
+
+
+
+/*                     Calculator Project                   */
+
+
+
+#cal-container
+{
+    width: 300px;
+    margin: 100px auto;
+    background-color: darkblue;
+    padding: 40px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 10px;
+    border-radius: 20px;
+    font-size: 20px;
+
+}
+
+#cal-container h2
+{
+    background-color: lightblue;
+    margin: 0;
+    padding: 13px 20px 0px 20px;
+    height: 53px;
+    font-size: 35px;
+    grid-column: 1/5;
+    grid-row: 1/2;
+    border-radius: 10px;
+}
+
+#cal-container h4
+{
+    text-align: center;
+    background-color: #36355F;
+    color: white;
+    margin: 0;
+    border-radius: 5px;
+    height: 45px;
+    font-size: 22px;
+    padding-top: 20px;
+
+}
+
+#cal-container h4:hover{
+    cursor: pointer;
+    background-color: #6558FF;
+    box-shadow: 0px 0px 10px #000;
+    transition-duration: 0.3s;
+}
+
+.operator-button{
+    background-color: #FFD33E !important; 
+    color: #212141 !important;
+}
+
+.operator-button:hover{
+    cursor: pointer;
+    background-color: #e4b310 !important;
+    box-shadow: 0px 0px 10px #000;
+    transition-duration: 0.3s;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
